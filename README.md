@@ -5,4 +5,4 @@
 Conceitos e Ferramentas abordados nesse aplicativo:
 
 - RecyclerView
-- DataBinding
+- ViewBinding
