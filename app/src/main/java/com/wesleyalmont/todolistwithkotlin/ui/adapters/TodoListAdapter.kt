@@ -17,7 +17,7 @@ class TodoListAdapter(
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val binding = TodoItemBinding.bind(view)
         fun bindingData(todo: Todo) {
-//            binding.rbCheckTodo.text = todo.complete.toString()
+            binding.cbCheckTodo.isChecked = todo.complete
             binding.tvTitle.text = todo.title
             binding.tvDescription.text = todo.description
         }
