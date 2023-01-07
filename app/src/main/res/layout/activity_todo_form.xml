@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:context=".TodoFormActivity">
+
+        <EditText
+            android:id="@+id/edTodo"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/todo_item_bg"
+            android:hint="Tarefa"
+            android:paddingLeft="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/edDescriptrion"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/todo_item_bg"
+            android:hint="Descrição"
+            android:paddingLeft="8dp"
+            app:layout_constraintEnd_toEndOf="@id/edTodo"
+            app:layout_constraintStart_toStartOf="@id/edTodo"
+            app:layout_constraintTop_toBottomOf="@id/edTodo" />
+
+        <CheckBox
+            android:id="@+id/cbComplete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/todo_item_bg"
+            android:text="Concluido"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/edDescriptrion"
+            app:layout_constraintStart_toStartOf="@id/edDescriptrion"
+            app:layout_constraintEnd_toEndOf="@id/edDescriptrion"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/todo_item_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/cbComplete"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cbComplete"
+            android:text="SALVAR"
+            app:layout_constraintVertical_bias="1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
