@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:fillViewport="true"
-
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        tools:context=".TodoFormActivity">
+        tools:context=".ui.TodoFormActivity">
 
         <EditText
             android:id="@+id/edTodo"
@@ -51,6 +50,7 @@
             />
 
         <Button
+            android:id="@+id/btnSave"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/todo_item_bg"
